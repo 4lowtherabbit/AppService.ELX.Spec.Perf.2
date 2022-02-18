@@ -13,7 +13,7 @@ namespace AppService.ELX.Spec.Perf._2.Controllers
         public async Task<string> Index()
         {
             HttpClient c = client.Value;
-            HttpResponseMessage response = await c.GetAsync("http://juzhu500.azurewebsites.net/");
+            HttpResponseMessage response = await c.GetAsync("https://juzhu500.azurewebsites.net/");
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
 
